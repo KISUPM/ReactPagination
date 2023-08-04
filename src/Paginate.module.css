@@ -1,0 +1,61 @@
+.breakLabel {
+    width: 30px;
+}
+
+.active {
+    font-weight: bold;
+    background: rgb(0, 0, 0, 0.3);
+}
+
+.container {
+    user-select: none;
+    /* border: 1px solid black; */
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container * {
+    list-style: none;
+    text-align: center;
+}
+
+.page {
+    margin: 0px 5px;
+    display: flex;
+    padding: 0;
+    width: 30px;
+    transition: all 0.2s;
+}
+
+.page:hover {
+    background: rgb(0, 0, 0, 0.2);
+}
+
+.page>a {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.nextBtn,
+.prevBtn {
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    padding: 0px 5px;
+    transition: all 0.2s;
+}
+
+.nextBtn:hover,
+.prevBtn:hover {
+    border: 1px solid rgb(0, 0, 0);
+    background: rgb(0, 0, 0, 0.2);
+}
+
+.nextBtn {
+    margin-left: 1rem;
+}
+
+.prevBtn {
+    margin-right: 1rem;
+}
